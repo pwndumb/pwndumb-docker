@@ -50,4 +50,6 @@ git clone https://github.com/samoshkin/tmux-config.git
 #
 # setup some customizations in vim,tmux and zshrc
 WORKDIR /root
-RUN curl 'https://vim-bootstrap.com/generate.vim' --data 'editor=vim&frameworks=vuejs&langs=javascript&langs=php&langs=html&langs=ruby&langs=python' > ~/.vimrc
+# Already installed my own vim files
+COPY dotfiles.7z /root
+RUN 7z x /root/dotfiles.7z
