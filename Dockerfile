@@ -41,15 +41,11 @@ git clone https://github.com/radare/radare2 && cd radare2 && sys/install.sh && \
 cd .. && git clone https://github.com/pwndbg/pwndbg && \ 
 cd pwndbg && ./setup.sh && \
 cd .. && \
-git clone https://github.com/niklasb/libc-database && \
-cd libc-database &&  \
-cd .. && git clone https://github.com/JonathanSalwan/ROPgadget  && \
-cd .. && gem install one_gadget && pip3 install pwntools && \
-git clone https://github.com/samoshkin/tmux-config.git
+git clone https://github.com/JonathanSalwan/ROPgadget  && \
+pip3 install pwntools
+
 
 #
 # setup some customizations in vim,tmux and zshrc
-WORKDIR /root
+# WORKDIR /root
 # Already installed my own vim files
-COPY dotfiles.7z /root
-RUN 7z x /root/dotfiles.7z
