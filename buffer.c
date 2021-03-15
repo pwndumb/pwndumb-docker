@@ -4,11 +4,9 @@
 
 void main(){
 	char buffer[64];
-	printf("Simples programa na linguagem C para explicar um estouro de buffer\n");
-	printf("E como isso pode levar usado para modificar o fluxo normal do programa\n");
+	printf("This is not safe\n");
 
-
-	printf("Entre com um nome:?");
+	printf("Whats Name: ?");
 	gets(buffer);
 	printf("%s",buffer);
 	
